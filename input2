@@ -1,0 +1,8 @@
+# Prompt the user to enter weight in kilograms
+kg = float(input("Enter weight in kilograms: "))
+
+# Convert kilograms to pounds
+pounds = kg * 2.2
+
+# Display the result
+print("Weight in pounds:", pounds)
