@@ -1,0 +1,54 @@
+x=5
+print(type(x))
+y=5.5
+print(type(y))
+print(1000.0)
+print("Hello World")
+print('Single quote can also be used')
+
+var1 = 10
+print(hex(id(var1)))
+
+var1 = 100
+print(hex(id(var1)))
+
+var1 = 20
+print(hex(id(var1)))
+
+var1 = 10
+print(hex(id(var1)))
+
+#A new address is created for every new variable.
+#Python checks if that variable was the same as before and if different, it assigns a new memory block but if the same, it assigns an older memory block.
+
+var2 = 100
+print(hex(id(var2)))
+
+#The same memory address was assigned as var1 when it was equal to 100.
+
+str1 = "Hello"
+str2 = "World"
+
+print(hex(id(str1[0])), hex(id(str1[1])))  # where 0 is the first index and 1 is the second index
+# Use the same method as described above to find the addresses of additional characters and complete the table below.
+
+print(hex(id(str1[0])), hex(id(str1[1])), hex(id(str1[2])), hex(id(str1[3])), hex(id(str1[4])))
+print(hex(id(str2[0])), hex(id(str2[1])), hex(id(str2[2])), hex(id(str2[3])), hex(id(str2[4])))
+
+#0x7ffbb6305448 = h
+#0x7ffbb63059b8 = e
+#0x7ffbb6305b08 = l
+#0x7ffbb6305b08 = l
+#0x7ffbb6305b98 = o
+
+#0x7ffbb6305718 = w
+#0x7ffbb6305b98 = o
+#0x7ffbb6305b28 = r
+#0x7ffbb6305b08 = l
+#0x7ffbb6305988 = d
+
+# dog + cat
+# the + dog + chases the + cat
+# dog * 4
+
+y=x+1
